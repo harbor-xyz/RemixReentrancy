@@ -1,0 +1,64 @@
+{
+    "chains": [
+        {
+            "chain": "ethereum",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                }
+            },
+            "tag": "v1"
+        },
+        {
+            "chain": "avalanche",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                }
+            },
+            "tag": "v1"
+        },
+        {
+            "chain": "arbitrum",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                }
+            },
+            "tag": "v1"
+        },
+        {
+            "chain": "optimism",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                }
+            },
+            "tag": "v1"
+        },
+        {
+            "chain": "polygon",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                }
+            },
+            "tag": "v1"
+        },
+        {
+            "chain": "fantom",
+            "config": {
+                "artifactsPath": "./artifacts",
+                "deploy": {
+                    "scripts": "./deploy"
+                }
+            },
+            "tag": "v1"
+        }
+    ]
+}
