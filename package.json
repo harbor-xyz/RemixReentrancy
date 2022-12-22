@@ -4,10 +4,21 @@
   "main": "index.js",
   "repository": "https://github.com/Dan-Nolan/RemixReentrancy.git",
   "license": "MIT",
+  "scripts": {
+    "attack1": "ENDPOINT=http://4.87.109.116:4000 npx hardhat run scripts/attack.js --network harbor",
+    "attack2": "ENDPOINT=http://4.87.109.116:4001 npx hardhat run scripts/attack.js --network harbor1",
+    "attack3": "ENDPOINT=http://4.87.109.116:4002 npx hardhat run scripts/attack.js --network harbor2",
+    "attack4": "ENDPOINT=http://4.87.109.116:4003 npx hardhat run scripts/attack.js --network harbor3",
+    "attack5": "ENDPOINT=http://4.87.109.116:4004 npx hardhat run scripts/attack.js --network harbor4",
+    "attack6": "ENDPOINT=http://4.87.109.116:4005 npx hardhat run scripts/attack.js --network harbor5"
+  },
   "dependencies": {
+    "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
+    "harbor-hardhat-deploy": "^0.0.1",
     "hardhat": "^2.12.4",
-    "hardhat-deploy": "^0.11.22"
+    "hardhat-deploy": "^0.11.22",
+    "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",

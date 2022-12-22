@@ -1,5 +1,8 @@
-require("hardhat-deploy");
+// require("./hardhat-harbor.js");
 require("@nomiclabs/hardhat-ethers");
+
+require("harbor-hardhat-deploy");
+// require("harbor-hardhat-anvil");
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -21,13 +24,57 @@ module.exports = {
   solidity: "0.8.9",
   namedAccounts: {
     deployer: 0,
-    victim: 1,
-    attacker: 2
   },
+  // defaultNetwork: "anvil",
+
   networks: {
     hardhat: {
+		loggingEnabled: true,
+		saveDeployments: true,
+		allowUnlimitedContractSize: true,
+    },
+    harbor: {
+      url: "http://54.87.109.116:4000",
+      saveDeployments: true,
       loggingEnabled: true,
       allowUnlimitedContractSize: true,
-    }
+
+    },
+    harbor1: {
+      url: "http://54.87.109.116:4001",
+      saveDeployments: true,
+      loggingEnabled: true,
+      allowUnlimitedContractSize: true,
+
+    },
+    harbor2: {
+      url: "http://54.87.109.116:4002",
+      saveDeployments: true,
+      loggingEnabled: true,
+      allowUnlimitedContractSize: true,
+
+    },
+    harbor3: {
+      url: "http://54.87.109.116:4003",
+      saveDeployments: true,
+      loggingEnabled: true,
+      allowUnlimitedContractSize: true,
+
+    },
+    harbor4: {
+      url: "http://54.87.109.116:4004",
+      launch: false, 
+      saveDeployments: true,
+      loggingEnabled: true,
+      allowUnlimitedContractSize: true,
+
+    },
+    harbor5: {
+      url: "http://54.87.109.116:4005",
+      launch: false, 
+      saveDeployments: true,
+      loggingEnabled: true,
+      allowUnlimitedContractSize: true,
+    },
   },
 };
