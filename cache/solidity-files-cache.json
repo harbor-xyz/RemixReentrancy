@@ -170,6 +170,50 @@
       "artifacts": [
         "Lock"
       ]
+    },
+    "/Users/prakashsanker/HarborRemixRentrancy/contracts/Attack.sol": {
+      "lastModificationDate": 1671697102808,
+      "contentHash": "a6589d2e506d5b47546ffdc05a0a9ba0",
+      "sourceName": "contracts/Attack.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Bank.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Attack"
+      ]
     }
   }
 }

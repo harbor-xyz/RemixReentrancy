@@ -1,5 +1,6 @@
 // require("./hardhat-harbor.js");
 require("@nomiclabs/hardhat-ethers");
+// require("hardhat-deploy");
 
 require("harbor-hardhat-deploy");
 // require("harbor-hardhat-anvil");
@@ -34,35 +35,35 @@ module.exports = {
 		allowUnlimitedContractSize: true,
     },
     harbor: {
-      url: "http://54.87.109.116:4000",
+      url: "http://3.81.89.209:4002",
       saveDeployments: true,
       loggingEnabled: true,
       allowUnlimitedContractSize: true,
 
     },
     harbor1: {
-      url: "http://54.87.109.116:4001",
+      url: "http://54.88.59.205:4001",
       saveDeployments: true,
       loggingEnabled: true,
       allowUnlimitedContractSize: true,
 
     },
     harbor2: {
-      url: "http://54.87.109.116:4002",
+      url: "http://54.88.59.205:4002",
       saveDeployments: true,
       loggingEnabled: true,
       allowUnlimitedContractSize: true,
 
     },
     harbor3: {
-      url: "http://54.87.109.116:4003",
+      url: "http://54.88.59.205:4003",
       saveDeployments: true,
       loggingEnabled: true,
       allowUnlimitedContractSize: true,
 
     },
     harbor4: {
-      url: "http://54.87.109.116:4004",
+      url: "http://54.88.59.205:4004",
       launch: false, 
       saveDeployments: true,
       loggingEnabled: true,
@@ -70,7 +71,7 @@ module.exports = {
 
     },
     harbor5: {
-      url: "http://54.87.109.116:4005",
+      url: "http://54.88.59.205:4005",
       launch: false, 
       saveDeployments: true,
       loggingEnabled: true,
